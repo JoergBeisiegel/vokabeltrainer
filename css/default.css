@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font:normal 14px 'Trebuchet MS', Tahoma, sans-serif;
+}
+h1 { font: 600 45px Verdana,Arial,sans-serif;}
+h2 { font-size:23px;  }
+h3 { font-size:30px; }
+h4 { font-size:12px; }
+h5 { font-size:18px; }
+p, h1, h2, h3 {
+	margin: 0px 0px;
+}
+ul {
+	margin: 0px 0px;
+	padding: 0 10px;		
+}
+#farbverlauf {
+	background:linear-gradient(30deg,#00BFFF,#01DFA5);
+}
+
+/********************* HEADER ***********************/
+
+
+#header {
+	height: 200px;
+}
+#header-content, #spielfeld-content, #footer {
+	max-width: 1200px;
+	margin: 0 auto; 
+	padding: 0;
+}
+#header-content {
+	padding-top: 75px;
+}
+#einloggen {
+	float: right;
+	padding-top: 50px;
+}
+
+/********************* SPIELFELD ***********************/
+
+#spielfeld {
+	background-image: url(../img/7314_2.jpg);
+	background-size:100% auto;
+	}
+#spielfeld ul {
+	margin: 30px 0px;
+}
+#spielfeld ul li {
+	font-size: 25px;
+}	
+#spielfeld-content {
+	height: 700px;
+}
+
+/**************** LINKS ****************************/
+
+#links {
+	float: left;
+	width: 33%;
+}
+#spielAblauf {
+	color: white;
+	margin: 35px 0px;
+}
+#spielAblauf ul li {
+	font-weight: 600;
+}
+#statistik {
+	color: magenta;
+	margin: 50px 0 40px 0px;
+}
+#beantwortet {
+	margin: 30px 0px;
+}
+h4 {
+	margin: 10px 0px;
+}
+#falschPos {
+	float: right;
+}
+#richtigPos {
+	float: left;
+}
+
+/****************** MITTE **************************/
+
+#mitte {
+	text-align: right;
+	float: left;
+	width: 33%;
+	padding: 0px 0px;
+}
+#bewertungHeader {
+	margin: 42px 0px 50px 0px;
+}
+#droppable {
+	margin: 0px 220px;
+}
+
+#antwort {
+	margin: 50px 0 20px 0;
+}
+
+/********************* RECHTS ***********************/
+.quiz {
+	font-size: larger;
+	padding: 5px;
+	text-align: left;
+}
+
+#draggable {
+	margin: 60px 10px;
+}
+#rechts {
+	float:right;
+	width:33%;
+	text-align: right;
+}
+#selectLanguage {
+	margin: 50px 0px;
+}
+#test {
+	margin: 20px 215px;
+}
+#stapel {
+	margin: 60px 10px;
+}
+.feld {
+	background: #081e66; 
+	width: 180px;
+	height: 250px;
+	border-radius: 10px; 
+	z-index: 1; 
+	font-size: 10px; 
+	overflow: hidden;
+}
+.playingcard {
+	background:linear-gradient(30deg,#07447d,#01DFA5);
+	border: 1px solid #052f57;
+	border-radius: 10px; 
+	width: 160px;
+	height: 230px;
+	margin: 0px 275px;
+	position: absolute;
+}
+.playingcard:hover {
+	background:#016784;
+}
+.white {
+	color: white;
+	margin-top: 20px;
+	font:  14px Arial, Sans-serif; 
+}
+.magenta {
+	color: magenta;
+	margin: 0 100px;
+	font:  14px Arial, Sans-serif; 
+}
+/********************* FOOTER***********************/
+
+#footer {
+	margin: auto;
+	text-align: center;
+	padding: 20px 20px;
+	margin-top: 30px;
+}
+
+input {
+	border:1px solid #E3E3E3;
+	border-radius: 4px;
+	line-height: 40px;
+	height: 30px;
+	padding-left: 20px;
+	margin-bottom: 5px;
+	color:#777;
+	width: 30%;
+}
+.login, button {
+	margin-top: 5px; 
+	border-radius: 5px; 
+	font:  14px Arial, Sans-serif; 
+	background: #016784 ;
+	padding: 7px 7px; 
+	color: #fff;	
+	border: 1px solid;
+	width: 25%;
+}
+/*
+#startButton, #pruefenButton, #login, button {
+	margin-top: 5px; 
+	border-radius: 5px; 
+	font:  14px Arial, Sans-serif; 
+	background: #016784 ;
+	padding: 7px 7px; 
+	color: #fff;	
+	border: 1px solid;
+	width: 25%;
+}
+*/
+#selectLanguageList {
+	margin-top: 5px; 
+	border-radius: 5px; 
+	font:  14px Arial, Sans-serif; 
+	background: #016784 ;
+	padding: 7px 7px; 
+	color: #fff;	
+	border: 1px solid;
+}
+#startButton:hover {
+	background:magenta;
+}
+#pruefenButton:hover{
+	background:magenta;
+}
+#login:hover{
+	background:magenta;
+}
+
+
+

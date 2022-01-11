@@ -1,0 +1,301 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font:normal 14px 'Trebuchet MS', Tahoma, sans-serif;
+}
+h1 { font: 600 45px Verdana,Arial,sans-serif;}
+h2 { font-size:23px; }
+h3 { font-size:30px; }
+h4 { font-size:12px; }
+h5 { font-size:18px; }
+
+p, h1, h2, h3 {
+	margin: 0px 0px;
+}
+ul {
+	margin: 0px 0px;
+	padding: 0 10px;		
+}
+
+
+#farbverlauf {
+	background:linear-gradient(30deg,#00BFFF,#01DFA5);
+	
+}
+#header {
+	height: 160px;
+}
+#header-content, #spielfeld-content, #footer {
+	max-width: 1400px;
+	margin: 0 auto; 
+	padding: 0;
+}
+#header-content {
+	padding-top: 55px;
+
+}
+#einloggen {
+	float: right;
+	padding-top: 50px;
+}
+#spielfeld {
+	background-image: url(../img/7314_2.jpg);
+	background-size:100% auto;
+	}
+#spielfeld ul {
+		margin: 30px 0px;
+
+}
+#spielfeld ul li {
+	font-size: 25px;
+}	
+#spielfeld-content {
+	height: 750px;
+}
+
+/********************************************/
+
+#links {
+	float: left;
+	width: 33%;
+}
+#spielAblauf {
+	color: white;
+	margin: 35px 0px;
+
+}
+#statistik {
+	color: magenta;
+	margin: 80px 0 40px 0px;
+
+}
+#beantwortet {
+	margin: 30px 0px;
+}
+h4 {
+	margin: 20px 0px;
+}
+#falschPos {
+	float: right;
+}
+#richtigPos {
+	float: left;
+}
+
+/********************************************/
+
+#mitte {
+	text-align: center;
+	float: left;
+	width: 33%;
+	padding: 0px 0px;
+
+}
+#bewertung {
+	margin: 42px 0px;
+}
+#droppable {
+	margin: 0px 260px;
+}
+
+#antwort {
+	margin: 40px 0px;
+}
+
+
+/********************************************/
+
+#rechts {
+	float:right;
+	width:33%;
+	text-align: right;
+}
+#selectLanguage {
+	margin: 50px 0px;
+}
+#test {
+	margin: 20px 265px;
+}
+#stapel {
+	margin: 20px 10px;
+
+}
+.feld {
+	background: gray; 
+	width: 200px;
+	height: 270px;
+	border-radius: 10px; 
+	z-index: 1; 
+	font-size: 10px; 
+	overflow: hidden;
+}
+.playingcard {
+	background:linear-gradient(30deg,#07447d,#01DFA5);
+	border: 1px solid #052f57;
+	border-radius: 10px; 
+	width: 180px;
+	height: 250px;
+	margin: 0px 275px;
+	position: absolute;
+	}
+
+.playingcard:hover {
+	background:#016784;
+
+}
+
+
+#footer {
+				margin: auto;
+			text-align: center;
+			padding: 10px 0;
+			margin-top: 30px;
+
+}
+
+
+
+
+/*
+
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		
+		 img {
+			max-width: 100%;
+			height: auto;
+		 }
+		#topheader {
+			max-width: 1400px;
+			margin: auto;
+			height: 150px;
+		}
+		#all {
+			max-width: 1400px;
+			margin: auto;
+		}
+		
+		
+
+		p {
+			text-align: center;
+			color:white;
+
+		}
+		--------------- HEADER -----------------
+
+
+		#header {
+			float: right;
+			padding-top: 100px;
+
+		}
+		
+		#logo {
+			padding-top: 55px;
+
+		}
+		
+		--------------- SPIELFELD -----------------
+
+		#spielfeld {
+			height: 650px;
+			background: url(../img/weltkarte.jpg);
+			background: #084B8A;
+			max-width: 100%;
+			padding: 20px;
+			padding-top: 50px;
+		}
+	
+		#startseite {
+
+		}
+		
+		#optionen {
+			padding-top: 50px ;
+		}
+			
+		#vokabelAnzahl{
+		}
+		
+		#selectLanguage {
+		}
+		
+		#button {			
+			position: absolute;
+			left: 650px;
+		}
+		.starten {
+			background: #084B8A;
+			color: white;
+			padding: 5px;
+			border-radius: 4px; 
+
+		}
+		
+		.starten:hover {
+			background: #05325c;
+		}
+		
+		#kartenPosition {
+			
+
+		}
+
+		div.kartenPosition {
+			background:#05325c;
+			max-width: 1400px;
+			margin: auto;
+			height: 150px;
+		}
+		#kartenFeld {
+			margin-top: 20px;
+			margin-bottom:20px;
+		}
+		.kartenPosition {
+			position: absolute;
+			width: 130px;
+			height: 180px;
+			border-radius: 10px; 
+			z-index: 1; 
+			font-size: 10px; 
+			overflow: hidden;
+		}
+		.playingcard {
+			background:linear-gradient(30deg,#07447d,#01DFA5);
+			border: 1px solid #052f57;
+			border-radius: 10px; 
+			position: absolute;
+			left: 1000px;
+			width: 130px;
+			height: 180px;
+			font-size: 10px;
+		}
+		.playingcard:hover {
+			background:#016784;
+
+		}
+		
+		#antwortDiv {
+			text-align: center;
+			margin-top: 250px;
+			
+		}
+		--------------- FOOTER -----------------
+
+
+		#footer {
+			max-width: 1000px;
+			margin: auto;
+			text-align: center;
+			padding: 10px 0;
+			margin-top: 30px;
+		}
+		*/

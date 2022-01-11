@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Vokabeltrainer</title>
+	<meta charset="utf-8">
+	<link href="css/default.css" rel="stylesheet">
+	<script src="js/jquery/jquery-3.3.1.js"></script>
+	<!--script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script-->
+	<!--script src="https://code.jquery.com/jquery-1.12.4.js"></script-->
+	<script src="js/jquery-ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/IdCollection.js"></script>
+	<script src="js/GlossaryEntry.js"></script>
+	<script src="js/Quiz.js"></script>
+	<script src="js/languageList.js"></script>
+</head>
+
+<body>
+
+
+	<div id="farbverlauf">
+
+		<div id="header">
+			<div id="header-content">
+
+				<div id="einloggen">
+					<input id="loginusername" name="dname" type="text" placeholder="Benutzername">
+					<input id="loginpassword" name="password" type="text" placeholder="Password">
+					<button id="login" class="login" type="button">Einloggen</button>
+				</div>
+
+				<h1 id="logo">Vokabeltrainer</h1>
+				<h2 id="slogan">connect yourself ...</h2>
+
+			</div>
+		</div>
+
+		<div id="spielfeld" hidden>
+			<div id="spielfeld-content">
+				<div id="links">
+					<div id="spielAblauf">
+						<h2>Anleitung</h2>
+						<ol>
+							<ul>
+								<li id="step1">Sprache auswählen</li>
+								<li id="step2">Vokabeltraining starten</li>
+								<li id="step3">Frage vom Stapel ziehen</li>
+								<li id="step4">Antwort eingeben</li>
+								<li id="step5">"Prüfen" drücken</li>
+								<li id="step6">Neue Karte ziehen</li>
+							</ul>
+						</ol>
+					</div>
+
+					<div id="statistik">Statistik</div>
+
+					<div id="beantwortet">
+						<div id="richtigPos">
+							<div id="richtig" class="feld">
+								<div class="white">Richtig beantwortete Fragen</div>
+								<div id="correctAnswers" class="white"></div>
+							</div>
+						</div>
+
+						<div id="falschPos">
+							<div id="falsch" class="feld">
+								<div class="white">Falsch beantwortete Fragen</div>
+								<div id="wrongAnswers" class="white"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="mitte">
+
+
+					<div id="bewertung">
+						<div id="bewertungHeader" class="magenta">Es wurde noch keine Frage beantwortet</div>
+					</div>
+
+
+					<div id="droppable" class="kartenPositi	on ui-widget-header feld">
+						<p class="white">Karte mit der Maus hierher ziehen</p>
+					</div>
+
+
+					<!--<div id="pruefungsFeld" class="feld"></div>-->
+					<div id="ok">
+						<div class="white">Aktuelle Frage</div>
+						<div id="antwort">
+							<form name="formular">
+								<input id="userInput" type="text" name="userInput" value="" placeholder="Antwort eingeben">
+								<button id="checkButton" type="button" onclick="answer()" disabled>Prüfen</button>
+								<br>
+								<button id="nextButton" type="button" onclick="showQuestion()" disabled>Weiter</button>
+								<br>
+							</form>
+						</div>
+						<div id="starten">
+						</div>
+					</div>
+				</div>
+
+				<div id="rechts">
+					<div id="selectLanguage">
+						<button id="startButton" type="button" onclick="startQuiz()" disabled>Neu starten</button>
+					</div>
+
+					<div id="test" class="feld">
+					</div>
+					<!--<div id="stapel" class="feld">
+					<div class="playingcard" style="z-index: 2; top: 289px;"></div>
+				</div>-->
+				</div>
+
+
+			</div>
+		</div>
+
+		<div id="footer">Copyright © 2018</div>
+	</div>
+
+
+
+</body>
+
+</html>
