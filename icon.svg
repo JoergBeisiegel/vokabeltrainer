@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#2f6fde"/>
+  <rect x="150" y="120" width="250" height="180" rx="24" fill="#ffffff" opacity="0.45" transform="rotate(-8 275 210)"/>
+  <rect x="112" y="170" width="288" height="210" rx="28" fill="#ffffff"/>
+  <text x="256" y="300" text-anchor="middle" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="112" font-weight="700" fill="#2f6fde">A→B</text>
+</svg>
